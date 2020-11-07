@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator Results</title>
+    </head>
+    <body>
+        <!-- <p>Hi there</p> -->
+        
+        {%if context.calculation == "add"%}
+            <p> You chose to {{context.calculation}} {{context.input1}} and {{context.input2}} and the result is:  {{context.input1 + context.input2}}</p>
+        {%elif context.calculation == "subtract"%}
+            <p> You chose to {{context.calculation}} {{context.input1}} and {{context.input2}} and the result is:  {{context.input1 - context.input2}}</p>
+        {%elif context.calculation == "multiply"%}
+            <p> You chose to {{context.calculation}} {{context.input1}} and {{context.input2}} and the result is:  {{context.input1 * context.input2}}</p>
+        {%elif context.calculation == "divide"%}
+            <p> You chose to {{context.calculation}} {{context.input1}} and {{context.input2}} and the result is:  {{context.input1 / context.input2}}</p>
+        {%endif%}
+            
+        
+
+
+
+
+
+        
+    </body>
+</html>
